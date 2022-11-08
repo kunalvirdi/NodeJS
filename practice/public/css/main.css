@@ -19,6 +19,18 @@ form {
   display: inline;
 }
 
+.centered {
+  text-align: center;
+}
+
+.image {
+  height: 20rem;
+}
+
+.image img {
+  height: 100%;
+}
+
 .main-header {
   width: 100%;
   height: 3.5rem;
@@ -141,10 +153,6 @@ form {
   align-items: stretch;
 }
 
-article{
-  height: fit-content;
-}
-
 .card {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 }
@@ -163,14 +171,10 @@ article{
 
 .card__image {
   width: 100%;
-  height: 65%;
-  padding: 1rem;
-
 }
 
 .card__image img {
   width: 100%;
-  height: 100%;
 }
 
 .card__actions {
@@ -201,6 +205,17 @@ article{
   color: white;
 }
 
+.btn.danger {
+  color: red;
+  border-color: red;
+}
+
+.btn.danger:hover,
+.btn.danger:active {
+  background: red;
+  color: white;
+}
+
 @media (min-width: 768px) {
   .main-header__nav {
     display: flex;
@@ -209,19 +224,4 @@ article{
   #side-menu-toggle {
     display: none;
   }
-}
-
-.centered{
-  text-align: center;
-}
-
-.desc__image{
-  width: 20%;
-  height: 50vh;
-  margin: auto;
-}
-
-.desc__image img{
-  width: 100%;
-  height: 100%;
 }
